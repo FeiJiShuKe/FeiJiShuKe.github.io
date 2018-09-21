@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title style="text-align: center;">酷狗音乐1</title>
+    <title style="text-align: center;">酷狗音乐2</title>
     <link href="css/base.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width,user-scale=no,initial-scale=1,minimum-scale,maximum-scale=1" />
     <script src="js/js%202.js"></script>
@@ -121,36 +121,36 @@
             //在微信中打开
             var oWXB = document.getElementById('wxb');
             var oXTB = document.getElementById('xtb');
-            oXTB.style.opacity = '0';
-            oWXB.style.opacity = '1';
+            oXTB.style.opacity = 0;
+            oWXB.style.opacity = 1;
         }
         if (ua.match(/WeiBo/i) == "weibo") {
             //在新浪微博客户端打开
             var oWXB = document.getElementById('wxb');
             var oXTB = document.getElementById('xtb');
-            oXTB.style.opacity = '0';
-            oWXB.style.opacity = '1';
+            oXTB.style.opacity = 0;
+            oWXB.style.opacity = 1;
         }
         if (ua.match(/QQ/i) == "qq") {
             //在QQ空间打开
             var oWXB = document.getElementById('wxb');
             var oXTB = document.getElementById('xtb');
-            oXTB.style.opacity = '0';
-            oWXB.style.opacity = '1';
+            oXTB.style.opacity = 0;
+            oWXB.style.opacity = 1;
         }
         if (browser.versions.ios) {
             //是否在IOS浏览器打开
             var oWXB = document.getElementById('wxb');
             var oXTB = document.getElementById('xtb');
-            oWXB.style.opacity = '0';
-            oXTB.style.opacity = '1';
+            oWXB.style.opacity = 0;
+            oXTB.style.opacity = 1;
         }
         if(browser.versions.android){
             //是否在安卓浏览器打开
             var oWXB = document.getElementById('wxb');
             var oXTB = document.getElementById('xtb');
-            oWXB.style.opacity = '0';
-            oXTB.style.opacity = '1';
+            oWXB.style.opacity = 0;
+            oXTB.style.opacity = 1;
         }
     } else {
         //否则就是PC浏览器打开
