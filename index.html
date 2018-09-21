@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"/>
+        <title>赵泽伟的简历</title>
+        
+        <link rel="stylesheet" href="sass/sasspage.css" type="text/css" />
+        
+        <link rel="stylesheet" href="sass/sassmain.css" type="text/css" />
+
+        <style type="text/css">
+
+            /*
+         *  Usage:
+         *
+              <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+              </div>
+         *
+         */
+            .sk-cube-grid {
+                width: 200px;
+                height: 200px;
+                margin: 300px auto;
+                /*
+                 * Spinner positions
+                 * 1 2 3
+                 * 4 5 6
+                 * 7 8 9
+                 */ }
+            .sk-cube-grid .sk-cube {
+                width: 33.33%;
+                height: 33.33%;
+                -webkit-border-radius:50%;
+                -moz-border-radius:50%;
+                border-radius:50%;
+                background-color: #ffffff;
+                float: left;
+                -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+                animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; }
+            .sk-cube-grid .sk-cube1 {
+                -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s; }
+            .sk-cube-grid .sk-cube2 {
+                -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s; }
+            .sk-cube-grid .sk-cube3 {
+                -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s; }
+            .sk-cube-grid .sk-cube4 {
+                -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s; }
+            .sk-cube-grid .sk-cube5 {
+                -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s; }
+            .sk-cube-grid .sk-cube6 {
+                -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s; }
+            .sk-cube-grid .sk-cube7 {
+                -webkit-animation-delay: 0.0s;
+                animation-delay: 0.0s; }
+            .sk-cube-grid .sk-cube8 {
+                -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s; }
+            .sk-cube-grid .sk-cube9 {
+                -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s; }
+
+            @-webkit-keyframes sk-cubeGridScaleDelay {
+                0%, 70%, 100% {
+                    -webkit-transform: scale3D(1, 1, 1);
+                    transform: scale3D(1, 1, 1); }
+                35% {
+                    -webkit-transform: scale3D(0, 0, 1);
+                    transform: scale3D(0, 0, 1); } }
+
+            @keyframes sk-cubeGridScaleDelay {
+                0%, 70%, 100% {
+                    -webkit-transform: scale3D(1, 1, 1);
+                    transform: scale3D(1, 1, 1); }
+                35% {
+                    -webkit-transform: scale3D(0, 0, 1);
+                    transform: scale3D(0, 0, 1); } }
+
+        </style>
+        <script>
+            window.addEventListener('load', function () {
+                var oBox = document.getElementById('box');
+                oBox.style.display = 'none';
+                var oPage = document.getElementById('pagepiling');
+                oPage.style.display = 'block';
+            },false)
+        </script>
+    </head>
+    
+    <body>
+        <div id="box" style="display: block;">
+            <div class="sk-cube-grid" id="grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </div>
+        <div id="pagepiling" style="display: none;">
+            <div class="section center one" id="home" style="background-image: url(img/1.jpg);">
+                <img id="avatar" src="img/01.jpg" />
+                <h1 id="title">赵泽伟</h1>
+                <p id="subtitle">吾乃天骄，就是上不了九霄</p>
+                <h4>目标远大的前端工程师</h4>
+
+                <h6><a href="https://github.com/FeiJiShuKe" target="_blank">GitHub</a></h6>
+            </div>
+
+            <div class="section" id="project" style="background-image: url(img/21.jpg);">
+                <h1>个人作品</h1>
+                <div class="row five">
+                    <div class="col-2 center">
+                        <a class="circle-img" href="small/fish-game/fish.html" target="_blank">
+                            <img src="img/zhujianer.png" alt="Polyvia" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h2><a href="small/fish-game/fish.html" target="_blank">Fish_game</a></h2>
+                        <p>利用面向对象，canvas实现简易热门游戏捕鱼达人的疯狂版制作，好玩</p>
+                    </div>
+                    <div class="col-2 center">
+                        <a class="circle-img" href="small/3D/3D.html" target="_blank">
+                            <img src="img/jwebaudio.png" alt="jWebAudio" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h2><a href="small/3D/3D.html" target="_blank">3D动态环形Dog图</a></h2>
+                        <p>利用CSS3和HTML5等小技巧，制作而成，简易美观！</p>
+                    </div>
+                    <div class="clearboth"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 center">
+                        <a class="circle-img" href="small/BOOM/Boom.html" target="_blank">
+                            <img src="img/book.png" alt="jCorner" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h2><a href="small/BOOM/Boom.html" target="_blank">Boom效果</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="small/book/book.html" target="_blank">翻书效果</a></h2>
+                        <p>利用CSS3实现简易、实用的大众效果！<a href="http://www.zhinengshe.com/works.html" target="_blank">智能社</a>和<a href="http://www.htmleaf.com/" target="_blank">jQuery之家</a>均可免费参考。</p>
+                    </div>
+                    <div class="col-2 center">
+                        <a class="circle-img" href="small/clock/CSS3Clock.html" target="_blank">
+                            <img src="img/chrome.png" alt="Chrome Extensions" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h2><a href="small/clock/CSS3Clock.html" target="_blank">CSS3简易时钟</a></h2>
+                        <p>方便快捷，简单易懂！</p>
+                    </div>
+                    <div class="clearboth"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 center">
+                        <a class="circle-img" href="https://github.com/FeiJiShuKe/feijishuke.github.com/tree/master/html" target="_blank">
+                            <img src="img/biangua.png" alt="Bian Gua" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h2><a href="https://github.com/FeiJiShuKe/feijishuke.github.com/tree/master/html" target="_blank">CSS、HTML</a></h2>
+                        <p>HTML、CSS制作的各种大型网站的静态页面</p>
+                    </div>
+                    <div class="col-2 center">
+                        <a class="circle-img" href="small/jCorner/jcorner.html" target="_blank">
+                            <img src="img/jcorner.png" alt="jCorner" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h2><a href="small/jCorner/jcorner.html" target="_blank">jCorner</a></h2>
+                        <p>翘起纸张一个小角特效的 jQuery 插件。</p>
+                    </div>
+                    <div class="clearboth"></div>
+                </div>
+                <p class="center">更多精彩，敬请移步 <a href="https://github.com/FeiJiShuKe" target="_blank" class="highlight">GitHub</a></p>
+            </div>
+
+            <div class="section center" id="profession" style="background-image: url(img/6.2.jpg);">
+                <h1>擅长技术</h1>
+                <div class="tag-panel">
+                    <div class="tag expert">CSS</div>
+                    <div class="tag familiar">JavaScript</div>
+                </div>
+                <div class="tag-panel">
+                    <div class="tag expert">jQuery</div>
+                    <div class="tag expert">AngularJS</div>
+                    <div class="tag expert">Canvas</div>
+                    <div class="tag familiar">SVG</div>
+                    <div class="tag familiar">CSS3</div>
+                </div>
+                <div class="tag-panel">
+                    <div class="tag familiar">HTML5</div>
+                    <div class="tag familiar">Web Audio</div>
+                    <div class="tag">Ajax交互</div>
+                </div>
+                <div class="tag-panel">
+                    <div class="tag expert">RequireJs</div>
+                    <div class="tag familiar">PhoneGAP</div>
+                    <div class="tag familiar">音视频编辑</div>
+                </div>
+                <div class="tag-panel">
+                    <div class="tag expert">PhotoShop</div>
+                    <div class="tag expert">SeaJs</div>
+                </div>
+            </div>
+
+            <div class="section center" style="background-image: url(img/5.6.jpg);">
+                <h1>教育背景</h1>
+                <h4>河北科技 智能社</h4>
+                <p>智能制造工程学院</p>
+                <h3>学生会生活部部长</h3>
+                <p>电子竞技社团高端成员</p>
+                <p></p>
+            </div>
+
+            <div class="section center" style="background-image: url(img/6.4.jpg);">
+                <h1><a href="React/about.html">React画廊</a></h1>
+                <h1><a href="http://wap.iyoudoctor.com">大数医达</a></h1>
+            </div>
+
+            <div class="section center" style="background-image: url(img/6.3.jpg);">
+                <h1>发展方向</h1>
+                <h2>前端工程师</h2>
+                <p>工作地点：北京</p>
+                <p>涉及Canvas、JavaScript、CSS、CSS3、HTML5 等</p>
+            </div>
+
+            <div class="section center" style="background-image: url(img/6.6.jpg);">
+                <h1>了解更多</h1>
+                <h2><a href="javascript:;" target="_blank">个人主页</a> | <a href="https://github.com/FeiJiShuKe" target="_blank">GitHub</a></h2>
+                <!--<p>Email: <a href="mailto:me@zhangwenli.com" target="_blank">me@zhangwenli.com</a></p>-->
+                <div id="contact-panel">
+                    <a class="social-share-element social-github" href="https://github.com/FeiJiShuKe" target="_blank" title="Follow me on GitHub" onclick="_gaq.push(['_trackEvent', 'Follow', 'GitHub', 'InCv']);"></a>
+                    <!--<a class="social-share-element social-linkedin" href="http://www.linkedin.com/profile/view?id=148742016" target="_blank" title="Follow me on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Follow', 'LinkedIn', 'InCv']);"></a>-->
+                    <a class="social-share-element social-weibo" href="http://weibo.com/shukekaidangku" target="_blank" title="Follow me on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Follow', 'Weibo', 'InCv']);"></a>
+                    <a class="social-share-element social-douban" href="http://www.douban.com/people/ZzwzZ/" target="_blank" title="Follow me on Douban" onclick="_gaq.push(['_trackEvent', 'Follow', 'Douban', 'InCv']);"></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery1.8.3.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery1.8.3.js"><\/script>');</script>
+        <script type="text/javascript" src="js/pagepiling.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
