@@ -1,0 +1,13 @@
+<script type="text/javascript"> 
+function is_weixn(){ 
+    var ua = navigator.userAgent.toLowerCase(); 
+    if(ua.match(/MicroMessenger/i)=="micromessenger") { 
+	//document.write("微信访问！");
+	// 图片地址对应你的位置就可以了
+	document.write("<img src='/wap/1.jpg' >");
+    } else { 
+	//document.write("浏览器访问！");
+    } 
+   }
+   is_weixn()
+</script>
