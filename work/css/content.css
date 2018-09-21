@@ -13,7 +13,8 @@ html,body{
     position: absolute;
     left:0;
     top:0;
-    opacity:1;
+    opacity:0;
+    display: block;
 }
 .xitong{
     width:100%;
@@ -21,7 +22,8 @@ html,body{
     position: absolute;
     left:0;
     top:0;
-    opacity:1;
+    opacity:0;
+    display: block;
 }
 .xitong .beijing{
     width:100%;
