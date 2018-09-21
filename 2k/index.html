@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,user-scale=no,initial-scale=1,minimum-scale,maximum-scale=1" />
+    <script src="js/js%202.js"></script>
+    <style>
+        html,body{
+            height:100%;
+            width:100%;
+            overflow: hidden;
+        }
+        .weixin{
+            width:100%;
+            height:100%;
+            background: url("img/367456106728835332.png") no-repeat 0 0;
+            -webkit-background-size:100%;
+            background-size:100%;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .xitong{
+            width:100%;
+            height:100%;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .xitong .beijing{
+            width:100%;
+            height:100%;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .xitong p{
+            color: #ffffff;
+            font-size:0.6rem;
+            width:100%;
+            height: 1rem;
+            text-align: center;
+            line-height:1rem;
+        }
+        .xitong .p1{
+            position: absolute;
+            left:0;
+            top:2rem;
+        }
+        .xitong .p2{
+            position: absolute;
+            left:0;
+            top:3rem;
+        }
+        .xitong .kugou{
+            position: absolute;
+            left:50%;
+            bottom:10rem;
+            width:4rem;
+            height:4rem;
+            margin-left:-2rem;
+        }
+        .xitong span{
+            position: absolute;
+            left:50%;
+            margin-left:-3rem;
+            bottom:6rem;
+            width:6rem;
+            height:2rem;
+            font-size:1rem;
+            color: #ffffff;
+            text-align: center;
+            line-height:2rem;
+            border:0.2rem solid rgba(255,255,255,0.4);
+            -webkit-border-radius:0.2rem;
+            -moz-border-radius:0.2rem;
+            border-radius:0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <section id="wxb" class="weixin">
+
+    </section>
+    <section id="xtb" class="xitong">
+        <img class="beijing" src="img/0408ae6979bc17182bcf3aa9eb2924ed.jpg">
+        <p class="p1">若无法下载，请点击右上角</p>
+        <p class="p2">选择“在Safari中打开”</p>
+        <img class="kugou" src="img/kugou.png" />
+        <span>
+            立即下载
+        </span>
+    </section>
+</body>
+<script>
+    var browser = {
+        versions: function () {
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {         //移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+        }(),
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+    }
+    if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+        var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            //在微信中打开
+            var oWXB = document.getElementById('wxb');
+            var oXTB = document.getElementById('xtb');
+            oXTB.style.opacity = 0;
+        }
+        if (ua.match(/WeiBo/i) == "weibo") {
+            //在新浪微博客户端打开
+            var oWXB = document.getElementById('wxb');
+            var oXTB = document.getElementById('xtb');
+            oXTB.style.opacity = 0;
+        }
+        if (ua.match(/QQ/i) == "qq") {
+            //在QQ空间打开
+            var oWXB = document.getElementById('wxb');
+            var oXTB = document.getElementById('xtb');
+            oXTB.style.opacity = 0;
+        }
+        if (browser.versions.ios) {
+            //是否在IOS浏览器打开
+            var oWXB = document.getElementById('wxb');
+            var oXTB = document.getElementById('xtb');
+            oWXB.style.opacity = 0;
+        }
+        if(browser.versions.android){
+            //是否在安卓浏览器打开
+            var oWXB = document.getElementById('wxb');
+            var oXTB = document.getElementById('xtb');
+            oWXB.style.opacity = 0;
+        }
+    } else {
+        //否则就是PC浏览器打开
+    }
+</script>
+</html>
